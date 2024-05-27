@@ -402,10 +402,9 @@ $brock
 }
 &lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/dripping.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;我走進隧道，還是孰悉的潮溼感，我抬頭看著隧道頂部凝聚的許多水滴，試圖找尋些線索。
 其中的一滴墜下，落入我的眼中。
-&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;text&quot;&gt;
-眼睛緩緩打開&lt;/div&gt;
+
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;img/water in eyes.jpg&quot; alt=&quot;water in eyes&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;&lt;timed 7s&gt;&gt; &lt;&lt;audio &quot;mus&quot; stop&gt;&gt; &lt;&lt;goto &quot;screen2_1&quot;&gt;&gt; &lt;&lt;/timed&gt;&gt;[[-&gt;screen2_1]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="screen2" tags="" position="950,25" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen2_1]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="screen2" tags="" position="950,25" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -445,7 +444,7 @@ $brock
   max-height: 100%;
   width: -webkit-fill-available;
 }
-&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/Healthy exercises_2.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; volume 0.3 loop play&gt;&gt;「漸漸迷茫.....?」&lt;&lt;set $lucy_flag to false&gt;&gt;&lt;&lt;set $lock to true&gt;&gt;
+&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/Healthy exercises_2.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; volume 0.3 loop play&gt;&gt;&lt;&lt;set $lucy_flag to false&gt;&gt;&lt;&lt;set $lock to true&gt;&gt;
 
 &lt;div class=&quot;container&quot; autofocus&gt;&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;img/Restricted book area.png&quot; alt=&quot;go_to_Lib.&quot;&gt;&lt;/div&gt;&lt;div class=&quot;overlay-text&quot;&gt;&lt;&lt;link &quot;前往禁書區&quot; &quot;screen2_6&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;&lt;&lt;/link&gt;&gt;[[-&gt;screen2_6]]&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="screen3" tags="" position="1075,150" size="100,100">&lt;style&gt;
 .container {
@@ -467,12 +466,8 @@ $brock
   max-height: 100%;
 }
 &lt;/style&gt;&lt;&lt;if $lucy_flag == true&gt;&gt;&lt;&lt;goto &quot;screen3_a&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/lucy talk.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;&lt;&lt;set $percentage6 to null&gt;&gt;&lt;div class=&quot;container&quot; autofocus&gt;
-&lt;&lt;timed 1s t8n&gt;&gt;&lt;div class=&quot;image&quot; styl=&quot;float: left;justify-content: flex-start;&quot;&gt;&lt;img src=&quot;img/Lucy_mon.png&quot; alt=&quot;lucy_mon&quot;&gt;&lt;/div&gt;
-&#39;&#39;我以&#39;&#39;&lt;&lt;textbox &quot;$percentage6&quot; &quot;&quot; &quot;screen3_2&quot; autofocus&gt;&gt;&#39;&#39;%的碎片&#39;&#39;[[醒來-&gt;screen3_2]]
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 0.5s t8n&gt;&gt;&lt;div class=&quot;image&quot; styl=&quot;float: right;justify-content: flex-end;&quot;&gt;&lt;img src=&quot;img/Lucy.png&quot; alt=&quot;lucy_hum&quot;&gt;&lt;/div&gt;
-&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp; &#39;&#39;Lucy:你是誰？&#39;&#39;&lt;&lt;/timed&gt;&gt;
-&lt;/div&gt;[[-&gt;screen3_a]]
+&#39;&#39;腦子裡只剩下記憶碎片&#39;&#39;&lt;&lt;textbox &quot;$percentage6&quot; &quot;&quot; &quot;screen3_2&quot; autofocus&gt;&gt;&#39;&#39;%&#39;&#39;
+&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp; &#39;&#39;：想不起來了……&#39;&#39;&lt;/div&gt;[[-&gt;screen3_a]]
 &lt;&lt;if $check2&gt;&gt;&lt;&lt;set $word to &quot;由於您上次輸入的數值過高，系統覺得您過於貪心，因此懲罰你重玩&quot;&gt;&gt;&lt;div style=&quot;color:#FF5151; font-size:15px;&quot;&gt;$word&lt;/div&gt;&lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="13" name="screen3_2" tags="" position="75,150" size="100,100">&lt;style&gt;
 .additional-image-props {
@@ -1010,10 +1005,10 @@ $brock
   max-width: 100%;
   max-height: 100%;
 }
-&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/lucy talk.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;&lt;&lt;set $percentage6 to null&gt;&gt;&lt;div class=&quot;container&quot; autofocus&gt;&lt;div class=&quot;image&quot; styl=&quot;float: left;justify-content: flex-start;&quot;&gt;&lt;img src=&quot;img/Lucy_mon.png&quot; alt=&quot;lucy_mon&quot;&gt;
-&lt;div style=&quot;  writing-mode: horizontal-tb;&quot;&gt;我以&lt;&lt;textbox &quot;$percentage6&quot; &quot;&quot; &quot;screen3_2&quot; autofocus&gt;&gt;%的碎片[[醒來-&gt;screen3_2]]&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;image&quot; styl=&quot;float: right;justify-content: flex-end;&quot;&gt;&lt;img src=&quot;img/Lucy.png&quot; alt=&quot;lucy_hum&quot;&gt;&lt;div style=&quot;  writing-mode: horizontal-tb;&quot;&gt;
-&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;Lucy 你是誰？&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/lucy talk.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;&lt;&lt;set $percentage6 to null&gt;&gt;&lt;div class=&quot;container&quot; autofocus&gt;
+&lt;div style=&quot;  writing-mode: horizontal-tb;&quot;&gt;腦子裡只剩下記憶碎片&lt;&lt;textbox &quot;$percentage6&quot; &quot;&quot; &quot;screen3_2&quot; autofocus&gt;&gt;%&lt;/div&gt;
+&lt;div style=&quot;  writing-mode: horizontal-tb;&quot;&gt;
+&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;：想不起來了……&lt;/div&gt;
 &lt;&lt;if $check2&gt;&gt;&lt;&lt;set $word to &quot;由於您上次輸入的數值過高，系統覺得您過於貪心，因此懲罰你重玩&quot;&gt;&gt;&lt;div style=&quot;color:#FF5151; font-size:15px;&quot;&gt;$word&lt;/div&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Untitled Passage 1" tags="" position="75,25" size="100,100">&lt;style&gt;
 .overlay-text {
   width: fit-content;
@@ -1039,7 +1034,7 @@ $brock
   color: white; /* 調整文字顏色 */
 }
 &lt;/style&gt;
-&lt;&lt;cacheaudio &quot;bg&quot; &quot;music/horror2.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;bg&quot; volume 0.6 loop play&gt;&gt;
+&lt;&lt;cacheaudio &quot;bg&quot; &quot;music/horror2.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;bg&quot; volume 0.3 loop play&gt;&gt;
 &lt;center&gt;
       &#39;&#39;我的名字是LUCY。&#39;&#39;&lt;br&gt;
       &#39;&#39;我曾無數次懷疑過自己的名字，如同懷疑自己的存在一般。&#39;&#39;&lt;br&gt;
@@ -1047,6 +1042,12 @@ $brock
       &#39;&#39;於是我決定，踏上這趟尋根之旅……。&#39;&#39;
       
     &lt;div class=&quot;overlay-text&quot;&gt;&lt;&lt;link &quot;&#39;&#39;開始遊戲&#39;&#39;&quot; &quot;screen0&quot;&gt;&gt;[[-&gt;screen0]]&lt;&lt;/link&gt;&gt;&lt;/div&gt;
+    
+    
+    
+    
+    
+    &lt;&lt;set $word to &quot;建議使用電腦體驗，若發現有圖片格式錯位，可透過縮放網頁比例進行調整。&quot;&gt;&gt;&lt;div style=&quot;color:#FF5151; font-size:15px;&quot;&gt;$word&lt;/div&gt;
 &lt;/center&gt;
 
 &lt;&lt;set $lock to true&gt;&gt;&lt;&lt;set $percentage2 to -1&gt;&gt;&lt;&lt;set $screen5_1 to false&gt;&gt;&lt;&lt;set $screen5_2 to false&gt;&gt;&lt;&lt;set $screen5_3 to false&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="screen5_4" tags="" position="250,325" size="100,100">&lt;style&gt;
@@ -1073,7 +1074,7 @@ $brock
 &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;&lt;div style=&quot;position: fixed;top: 0;background-color: #111;width: 100%;z-index: 6666;&quot;&gt;
 &lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;以前的教室……？
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/GqBXSrd.gif&quot; alt=&quot;C1&quot;&gt;&lt;/div&gt;
-&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen5_6]]&lt;&lt;link &quot;下個房間&quot; &quot;screen5_6&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="test" tags="" position="1450,975" size="100,100">aletr(&quot;try&quot;)
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen5_6]]&lt;&lt;link &quot;以前的教室&quot; &quot;screen5_6&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="test" tags="" position="1450,975" size="100,100">aletr(&quot;try&quot;)
 &lt;&lt;script&gt;&gt;
 Engine.restart()
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="screen0" tags="" position="200,25" size="100,100">&lt;style&gt;
@@ -1096,11 +1097,10 @@ Engine.restart()
   max-height: 100%;
   width: -webkit-fill-available;             
 }                                                            /*丟丟銅仔音效 */
-&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/throat.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; volume 0.7 loop play&gt;&gt;根據筆記中的圖像，我來到一處隧道，印象中是小時候爸媽帶我出去玩時經過之地，那裡偶爾會有火車經過，隧道裡好像永遠都在下雨，我好奇地問媽媽這是怎麼回事，她沒有說話，只是唱起那段童謠——丟丟銅仔。
-&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;text&quot;&gt;
-慢慢走入...&lt;/div&gt;
+&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/throat.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; volume 0.7 loop play&gt;&gt;根據筆記中的圖像，我來到一處隧道，印象中是小時候爸媽帶我出去玩時經過之地，那裡偶爾會有火車經過，隧道裡好像永遠都在下雨，我好奇地問媽媽這是怎麼回事，她沒有說話，只是唱起那段童謠——丟丟銅仔。 
+點擊圖片
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;img/tunnel1.png&quot; alt=&quot;tunnel1&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;&lt;audio &quot;mus&quot; stop&gt;&gt; [[-&gt;screen1]]&lt;&lt;link &quot;下一步&quot; &quot;screen1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="screen5_5" tags="" position="0,550" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt; [[-&gt;screen1]]&lt;&lt;link &quot;下一步&quot; &quot;screen1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="screen5_5" tags="" position="0,550" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -1217,9 +1217,9 @@ Engine.restart()
 }                                                            /*丟丟銅仔音效 */
 &lt;/style&gt;&lt;&lt;set $percentage2 to $percentage&gt;&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/mix.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;&lt;&lt;set $countp = 0&gt;&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $percentage2 = Number($percentage2)+Number($countp)&gt;&gt;
 &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;&lt;div style=&quot;position: fixed;top: 0;background-color: #111;width: 100%;z-index: 6666;&quot;&gt;
-&lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;我想起來了，我似乎曾經很喜歡這樣的律動，那是我對於舞蹈的啟蒙。我想起來了
+&lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;我想起來了
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;img/C4.jpg&quot; alt=&quot;C4&quot;&gt;&lt;/div&gt;
-我似乎很喜歡這樣的律動，那是我對舞蹈
+我似乎很喜歡這樣的律動，那是我對舞蹈的
 &lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen5_8]]&lt;&lt;link &quot;啟蒙&quot; &quot;screen5_8&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="screen5_8" tags="" position="250,825" size="100,100">&lt;style&gt;
 .container {
   position: relative;
@@ -1883,7 +1883,7 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
 
 
 
-&lt;&lt;timed 20s&gt;&gt; &lt;&lt;audio &quot;mus&quot; stop&gt;&gt; &lt;&lt;goto &quot;screen2_4&quot;&gt;&gt; &lt;&lt;/timed&gt;&gt;[[-&gt;screen2_4]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_4&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="screen5_15" tags="" position="700,1325" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen2_4]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_4&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="screen5_15" tags="" position="700,1325" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -1952,7 +1952,7 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
 }
 &lt;/style&gt;&lt;&lt;set $percentage2 to $percentage&gt;&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/Lucy In The Sky With Diamonds.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;&lt;&lt;set $countp = 0&gt;&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;&lt;set $countp += 10&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $percentage2 = Number($percentage2)+Number($countp)&gt;&gt;
 &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;&lt;div style=&quot;position: fixed;top: 0;background-color: #111;width: 100%;z-index: 6666;&quot;&gt;
-&lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;點擊圖片
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Lc1VGUA.gif&quot; alt=&quot;outsidefire&quot;&gt;&lt;/div&gt;
 &lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen5_1]]&lt;&lt;link &quot;回到帳篷&quot; &quot;screen5_1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="screen5_18" tags="" position="75,675" size="100,100">&lt;style&gt;
 .container {
@@ -2003,7 +2003,7 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
 
 
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/gT5UpvY.gif&quot; alt=&quot;inside&quot;&gt;&lt;/div&gt;
-&lt;&lt;timed 20s&gt;&gt; &lt;&lt;audio &quot;mus&quot; stop&gt;&gt; &lt;&lt;goto &quot;screen2_3&quot;&gt;&gt; &lt;&lt;/timed&gt;&gt;[[-&gt;screen2_3]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_3&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="screen2_3" tags="" position="575,25" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen2_3]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_3&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="screen2_3" tags="" position="575,25" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -2027,7 +2027,7 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
 
 
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/nU5OdH4.gif&quot; alt=&quot;disappear&quot;&gt;&lt;/div&gt;
-&lt;&lt;timed 7s&gt;&gt; &lt;&lt;audio &quot;mus&quot; stop&gt;&gt; &lt;&lt;goto &quot;screen2_2&quot;&gt;&gt; &lt;&lt;/timed&gt;&gt;[[-&gt;screen2_2]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="screen2_4" tags="" position="825,25" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen2_2]]&lt;&lt;link &quot;下一步&quot; &quot;screen2_2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="screen2_4" tags="" position="825,25" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -2089,9 +2089,9 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
   max-height: 100%;
   width: -webkit-fill-available;
 }
-&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/mix.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;這裡的地下竟然藏著這麼多書這是......？
+&lt;/style&gt;&lt;&lt;cacheaudio &quot;mus&quot; &quot;music/mix.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;mus&quot; loop play&gt;&gt;這裡的地下竟然藏著這麼多書
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;img/Restricted book area1.png&quot; alt=&quot;Restricted book area1&quot;&gt;&lt;/div&gt;
-&lt;&lt;timed 7s&gt;&gt; &lt;&lt;audio &quot;mus&quot; stop&gt;&gt; &lt;&lt;goto &quot;screen3&quot;&gt;&gt; &lt;&lt;/timed&gt;&gt;[[-&gt;screen3]]&lt;&lt;link &quot;這是......？&quot; &quot;screen3&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="screen5_19" tags="" position="250,575" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen3]]&lt;&lt;link &quot;這是......？&quot; &quot;screen3&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="screen5_19" tags="" position="250,575" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
@@ -2511,7 +2511,7 @@ Lucy按照腦中的舞蹈跳了起來，越跳越快，甚至跳脫了腦中的�
 &lt;div style=&quot;white-space: nowrap;display: flex;align-items: center;margin:8px 0;&quot;&gt;道具:&lt;div class=&quot;additional-image-props&quot; data-n=&quot;LSD&quot;&gt;&lt;img src=&quot;img/LSD.jpg&quot; alt=&quot;LSD&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;if $screen5_1&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;心靈郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_6&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;灼熱郵票&quot;&gt;,&lt;img src=&quot;img/fire.jpg&quot; alt=&quot;fire&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_20&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;漩渦郵票&quot;&gt;,&lt;img src=&quot;img/circle.jpg&quot; alt=&quot;circle&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $screen5_28&gt;&gt;&lt;div class=&quot;additional-image-props&quot; data-n=&quot;發光郵票&quot;&gt;,&lt;img src=&quot;img/heart.jpg&quot; alt=&quot;heart&quot; width=&quot;40px&quot;&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;那天之後我越來越不喜歡健康操，我想跳舞，沒有拘束的、自由的舞。
 同學們仍然很快樂，難道我的想法很奇怪嗎？
 &lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/DER94Gj.gif&quot; alt=&quot;S1&quot;&gt;&lt;/div&gt;
-&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen3_5]]&lt;&lt;link &quot;回到書籍&quot; &quot;screen3_5&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="screen5_33" tags="" position="700,400" size="100,100">&lt;style&gt;
+&lt;&lt;audio &quot;mus&quot; stop&gt;&gt;[[-&gt;screen3_5]]&lt;&lt;link &quot;回到禁書區&quot; &quot;screen3_5&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="screen5_33" tags="" position="700,400" size="100,100">&lt;style&gt;
 .container {
   position: relative;
 }
